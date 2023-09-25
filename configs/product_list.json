@@ -1,0 +1,76 @@
+{
+  "product_list": [
+    {
+      "id": "1",
+      "type": "1",
+      "order": "1",
+      "name":"Aluminum Hydroxide",
+      "profile": "aluminum_hydroxide.png",
+      "cas": "21645-51-2"
+    },
+    {
+      "id": "2",
+      "type": "1",
+      "order": "2",
+      "name":"Calcium Chloride",
+      "profile": "calcium_chloride.png",
+      "cas": "10043-52-4"
+    },
+    {
+      "id": "3",
+      "type": "1",
+      "order": "3",
+      "name":"Ferric Chloride",
+      "profile": "ferric_chloride.png",
+      "cas": "7705-8-0"
+    },
+    {
+      "id": "4",
+      "type": "1",
+      "order": "4",
+      "name":"Magnesium Chloride",
+      "profile": "magnesium_chloride.png",
+      "cas": "7791-18-6"
+    },
+    {
+      "id": "5",
+      "type": "1",
+      "order": "5",
+      "name":"Sodium Sulphate",
+      "profile": "sodium_sulphate.png",
+      "cas": "7757-82-6"
+    },
+    {
+      "id": "6",
+      "type": "2",
+      "order": "6",
+      "name":"ORANGE 13",
+      "profile": "orange_color.png",
+      "cas": "3520-72-7"
+    },
+    {
+      "id": "7",
+      "type": "2",
+      "order": "7",
+      "name":"YELLOW 12",
+      "profile": "yellow_color.png",
+      "cas": "6358-85-6 / 15541-56-7"
+    },
+    {
+      "id": "8",
+      "type": "2",
+      "order": "8",
+      "name":"GREEN 7",
+      "profile": "green_color.png",
+      "cas": "1328-53-6"
+    },
+    {
+      "id": "9",
+      "type": "2",
+      "order": "9",
+      "name":"ALPHA BLUE 15:0",
+      "profile": "blue_color.png",
+      "cas": "147-14-8"
+    }
+  ]
+}

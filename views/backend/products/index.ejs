@@ -1,0 +1,60 @@
+<%- layout('../layout/index') %>
+<!--====== Page Banner Start ======-->
+<section class="page-banner page-banner-custom">
+    <div class="page-banner-bg">
+        <div class="container">
+            <div class="banner-content banner-content-custom align-items-center">
+                <h2 class="title title-custom"><span>Our</span> Products</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== Page Banner Ends ======-->
+<section class="top-courses-area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="courses-menu pt-40 text-center">
+                    <ul class="menu-items">
+                        <li data-filter="*" class="active">All</li>
+                        <li data-filter=".chemical">Chemical</li>
+                        <li data-filter=".color">Pigments</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="courses-wrapper">
+            <div class="row grid">
+                <%product_list.forEach((item,index) => { %>
+                <div class="col-lg-3 col-sm-6 courses-col <%- (item.type == 1 ? 'chemical':'color')%>">
+                    <div class="single-courses-2 mt-30">
+                        <div class="courses-image">
+                            <a href="<%- BASE_URL %>/products/<%-(item.id)%>/product-details">
+                                <img
+                                        src="<%- MEDIA_URL %>/assets/images/product/<%- (item.type == 1 ? 'chemical':'color')%>/<%- item.profile%>"
+                                        width="270"
+                                        height="170" alt="product" style="aspect-ratio: 1;"></a>
+                        </div>
+                        <div class="courses-content">
+                            <!-- <a href="#" class="category">#Al(OH)<sub>3</sub></a> -->
+                            <h4 class="courses-title"><a href="javascript:void(0)"><%- item.name%></a></h4>
+                            <div class="duration-rating">
+                                <div class="duration-fee">
+                                    <p class="duration"><%- item.name%></p>
+                                </div>
+                                <div class="rating">
+                                    <span>CAS no.: <%- item.cas%></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <%});%>
+            </div>
+        </div>
+
+        <ul class="pagination-items text-center">
+            <li><a class="active" href="#">01</a></li>
+        </ul>
+    </div>
+</section>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title><%- APP_NAME %></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="<%- MEDIA_URL %>/assets/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/plugins/fontawesome.min.css">
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/plugins/default.css">
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/plugins/animate.min.css">
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/plugins/slick.css">
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/plugins/magnific-popup.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/style.min.css">
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/custom.css">
+</head>
+<body>
+<% include ../partials/_header.ejs %>
+<%- body %>
+<% include ../partials/_footer.ejs %>
+
+<!--====== BACK TOP TOP PART START ======-->
+<a href="javascript:void(0)" onclick="goToTop()" class="back-to-top" style="bottom: 100px;">
+    <i class="fa fa-chevron-up"></i>
+</a>
+<!--====== BACK TOP TOP PART ENDS ======-->
+
+<!--====== Jquery js ======-->
+<script src="<%- MEDIA_URL %>/assets/js/vendor/jquery-3.6.0.min.js"></script>
+<script src="<%- MEDIA_URL %>/assets/js/vendor/modernizr-3.7.1.min.js"></script>
+
+<!--====== All Plugins js ======-->
+<script src="<%- MEDIA_URL %>/assets/js/plugins/popper.min.js"></script>
+<script src="<%- MEDIA_URL %>/assets/js/plugins/bootstrap.min.js"></script>
+<script src="<%- MEDIA_URL %>/assets/js/plugins/slick.min.js"></script>
+<script src="<%- MEDIA_URL %>/assets/js/plugins/jquery.magnific-popup.min.js"></script>
+<script src="<%- MEDIA_URL %>/assets/js/plugins/imagesloaded.pkgd.min.js"></script>
+<script src="<%- MEDIA_URL %>/assets/js/plugins/isotope.pkgd.min.js"></script>
+<script src="<%- MEDIA_URL %>/assets/js/plugins/wow.min.js"></script>
+<script src="<%- MEDIA_URL %>/assets/js/pages/contact.js"></script>
+
+<!--====== Main Activation  js ======-->
+<script src="<%- MEDIA_URL %>/assets/js/main.js"></script>
+
+<script src="<%- MEDIA_URL %>/assets/js/custom.js"></script>
+</body>
+</html>

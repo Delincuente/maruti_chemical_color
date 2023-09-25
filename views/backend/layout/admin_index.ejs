@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title><%- APP_NAME %></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="<%- MEDIA_URL %>/assets/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/plugins/fontawesome.min.css">
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/plugins/default.css">
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/plugins/animate.min.css">
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/plugins/slick.css">
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/plugins/magnific-popup.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/style.min.css">
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/custom.css">
+
+    <script>
+        var BASE_URL = '<%- BASE_URL %>';
+    </script>
+</head>
+<body>
+<div class="container">
+    <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+                    <div class="d-flex justify-content-center py-2">
+                        <a href="index.html" class="logo d-flex align-items-center w-auto">
+                            <img src="<%- MEDIA_URL %>/assets/images/logo.png" width="135" height="88" alt="Logo">
+                            <span class="d-none d-lg-block">MARUTI COLOR AND CHEMICAL</span>
+                        </a>
+                    </div><!-- End Logo -->
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="pt-4 pb-2">
+                                <h5 class="card-title text-center pb-0 fs-4">Login to Your Account</h5>
+                                <p class="text-center small">Enter your username & password to login</p>
+                            </div>
+                            <form class="row g-3">
+                                <div class="col-12">
+                                    <label for="id_username" class="form-label">Username</label>
+                                    <div class="input-group has-validation">
+                                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                        <input type="text" name="username" class="form-control" id="id_username"
+                                               required>
+                                        <div id="id_username-error" class="invalid-feedback">Please enter your
+                                            username.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="id_password" class="form-label">Password</label>
+                                    <input type="password" name="password" class="form-control" id="id_password"
+                                           required>
+                                    <div id="id_password-error" class="invalid-feedback">Please enter your password!
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100" type="button" onclick="onSubmit()">Login
+                                    </button>
+                                </div>
+                                <p id="id_login_error" class="alert alert-danger"></p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="credits">
+                        Designed by <a href="">###</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+<script src="<%- MEDIA_URL %>/assets/js/vendor/jquery-3.6.0.min.js"></script>
+<script src="<%- MEDIA_URL %>/assets/js/pages/auth.js"></script>
+</html>

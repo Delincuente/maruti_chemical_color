@@ -1,0 +1,50 @@
+<header class="header-area">
+    <div class="header-top header-top-custom">
+        <div class="container">
+            <div class="header-top-wrapper d-flex flex-wrap justify-content-sm-between">
+                <div class="header-top-left mt-10">
+                    <ul class="header-meta">
+                        <li><a href="infoedumate@example.com">maruticolors89@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="navigation" class="navigation navigation-landscape">
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <div class="header-logo">
+                        <a href="/" style="display: flex; align-items: center;">
+                            <img src="<%- MEDIA_URL %>/assets/images/logo.png" class="logo-img" width="135" height="88" alt="Logo">
+                            <!-- <h5 style="margin-left: 10px; margin-bottom: 0;" margin-left: -10px; font-size: 16px;>MARUTI COLOR AND CHEMICAL</h5> -->
+                            <h5 style="margin-left: 5px; margin-bottom: 0; font-size: 16px;">MARUTI COLOR AND CHEMICAL</h5>
+                            <!-- <h5 style="margin-left: 5px; margin-bottom: 0; font-size: 16px; color: rgb(9, 9, 115);">MARUTI COLOR AND CHEMICAL</h5> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-7 position-static">
+                    <div class="nav-toggle"></div>
+                    <nav class="nav-menus-wrapper">
+                        <ul class="nav-menu">
+                            <li>
+                                <a class="<%-(current_menu == 'home' ? 'active':'')%>" href="/">Home</a>
+                            </li>
+                            <li>
+                                <a class="<%-(current_menu == 'products' ? 'active':'')%>" href="/products">Products</a>
+                            </li>
+                            <li>
+                                <a class="<%-(current_menu == 'about-us' ? 'active':'')%>" href="/about-us">About us</a>
+                            </li>
+                            <li>
+                                <a class="<%-(current_menu == 'contact-us' ? 'active':'')%>"
+                                   href="/contact-us">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title><%- APP_NAME %></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="<%- MEDIA_URL %>/assets/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/plugins/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/plugins/fontawesome.min.css">
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/plugins/default.css">
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/plugins/animate.min.css">
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/plugins/slick.css">
+    <link rel="stylesheet" href="<%- MEDIA_URL %>/assets/css/plugins/magnific-popup.css">
+    <link href="<%- MEDIA_URL %>/assets/admin/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <!--<link href="<%- MEDIA_URL %>/assets/admin/vendor/simple-datatables/style.css" rel="stylesheet">-->
+    <link href="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.css" rel="stylesheet">
+    <link href="<%- MEDIA_URL %>/assets/admin/css/style.css" rel="stylesheet">
+
+    <script>
+        var BASE_URL = '<%- BASE_URL %>';
+    </script>
+</head>
+<body>
+<header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+        <a href="dashboard" class="logo d-flex align-items-center">
+            <img src="<%- MEDIA_URL %>/assets/images/logo.png" alt="">
+            <span class="d-none d-lg-block">Maruti Chemical and Color</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div>
+    <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+            <li class="nav-item d-block d-lg-none">
+                <a class="nav-link nav-icon search-bar-toggle " href="#">
+                    <i class="bi bi-search"></i>
+                </a>
+            </li>
+            <li class="nav-item dropdown me-5">
+                <a class="nav-link nav-profile d-flex align-items-center pe-0" href="javascript:void(0)"
+                   data-bs-toggle="dropdown">
+                    <span class="d-none d-md-block dropdown-toggle ps-2">Admin</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center" href="/admin/sign-out">
+                            <i class="bi bi-box-arrow-right"></i>
+                            <span>Sign Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="dashboard">
+                <i class="bi bi-grid"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+    </ul>
+</aside>
+<main id="main" class="main">
+    <div class="pagetitle">
+        <h1>Home</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="dashboard">Home</a></li>
+            </ol>
+        </nav>
+    </div>
+    <section class="section">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Inquiries</h5>
+                        <table class="table" id="inquiry-list">
+                            <thead>
+                            <tr>
+                                <th scope="col" id="index">#</th>
+                                <th scope="col">Company Name</th>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Date</th>
+                                <th scope="col" id="actions">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div class="modal fade" id="verticalycentered" role="dialog" tabindex="-1">
+
+<!-- ======= Footer ======= -->
+<!--<footer id="footer" class="footer">-->
+<!--<div class="copyright">-->
+<!--&copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved-->
+<!--</div>-->
+<!--<div class="credits">-->
+<!--&lt;!&ndash; All the links in the footer should remain intact. &ndash;&gt;-->
+<!--&lt;!&ndash; You can delete the links only if you purchased the pro version. &ndash;&gt;-->
+<!--&lt;!&ndash; Licensing information: https://bootstrapmade.com/license/ &ndash;&gt;-->
+<!--&lt;!&ndash; Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ &ndash;&gt;-->
+<!--Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
+<!--</div>-->
+<!--</footer>&lt;!&ndash; End Footer &ndash;&gt;-->
+
+<script src="<%- MEDIA_URL %>/assets/js/vendor/jquery-3.6.0.min.js"></script>
+<script src="<%- MEDIA_URL %>/assets/admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!--<script src="<%- MEDIA_URL %>/assets/admin/vendor/simple-datatables/simple-datatables.js"></script>-->
+<script src="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.js"></script>
+
+<script src="<%- MEDIA_URL %>/assets/admin/js/main.js"></script>
+<script src="<%- MEDIA_URL %>/assets/js/pages/inquiry.js"></script>
+</body>
+
+</html>

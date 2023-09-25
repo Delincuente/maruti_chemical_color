@@ -1,0 +1,111 @@
+<%- layout('../layout/index') %>
+<!--====== Page Banner Start ======-->
+<section class="page-banner page-banner-custom">
+    <div class="page-banner-bg">
+        <div class="container">
+            <div class="banner-content banner-content-custom align-items-center">
+                <h2 class="title title-custom">Product <span>Details</span></h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== Page Banner Ends ======-->
+
+<!--====== Product Details Start ======-->
+<section class="product-details-page" style="padding-top: 10px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="product-details-wrapper">
+                    <div class="product-details-content">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 col-md-8">
+                                <div class="details-image mt-50">
+
+                                    <img src="<%- MEDIA_URL %>/assets/images/product/<%- (product_data.type == 1 ? 'chemical':'color')%>/<%- product_data.profile%>"
+                                         width="377"
+                                         height="453"
+                                         alt="Product Details">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="details-content mt-45">
+                                    <h4 class="product-title"><%- (product_data.name)%></h4>
+                                    <div class="product-content-wrapper">
+                                        <% basic_data.forEach((item,index)=>{ %>
+                                        <div class="basic-information-custom">
+                                            <span><%- (item.label)%> : <%- (item.value)%> </span>
+                                        </div>
+                                        <% });%>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-details-tab">
+                            <ul class="nav nav-justified">
+                                <li class="nav-item">
+                                    <a class="active" data-bs-toggle="tab" href="#description">Description</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a data-bs-toggle="tab" href="#information">Additional</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a data-bs-toggle="tab" href="#reviews">Application</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<%-(product_data.file_path)%>" download="<%-(product_data.file_name)%>"><i
+                                            class="fa fa-download"></i></a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="description">
+                                    <div class="product-description">
+                                        <p> <%- (description.basic)%> </p>
+                                        <ul class="product-list">
+                                            <% description.points.forEach((item,index)=>{%>
+                                            <li>
+                                                <i class="far fa-check-circle"></i>
+                                                <p><b><%- (item.label)%></b></p>
+                                                <p><%- (item.details)%></p>
+                                            </li>
+                                            <%});%>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="information">
+                                    <div class="product-information table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                            <% additional_information.forEach((item,index)=>{ %>
+                                            <tr>
+                                                <td class="table-title">
+                                                    <h4 class="title"><%- (item.label)%></h4>
+                                                </td>
+                                                <td class="table-content">
+                                                    <p><%- (item.value)%></p>
+                                                </td>
+                                            </tr>
+                                            <% });%>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="reviews">
+                                    <div class="product-application-wrapper">
+                                        <% application_list.forEach((item,index)=>{ %>
+                                        <div class="product-list" style="margin-bottom: 10px;">
+                                            <div style="float: left"><i class="far fa-check-circle"></i></div>
+                                            <div style="padding-left: 25px"><b><%- (item)%></b></div>
+                                        </div>
+                                        <% })%>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== Product Details Ends ======-->

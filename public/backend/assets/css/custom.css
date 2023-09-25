@@ -1,0 +1,191 @@
+.header-top-custom {
+    background: linear-gradient(90deg,
+    rgb(111, 63, 149) 0%,
+    rgb(196, 47, 132) 12.5%,
+    rgb(233, 45, 52) 25%,
+    rgb(248, 152, 46) 37.5%,
+    rgb(243, 234, 35) 50%,
+    rgb(42, 172, 85) 62.5%,
+    rgb(19, 161, 198) 75%,
+    rgb(58, 69, 151) 87.5%);
+}
+
+.event-area-custom {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.page-banner-custom {
+    padding-top: 155px;
+    background: #fff;
+}
+
+.banner-content-custom {
+    padding-top: 80px;
+    padding-bottom: 0px;
+}
+
+.banner-content .title-custom {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 54px;
+    color: #07294d;
+}
+
+.banner-content .title-custom span {
+    color: #0c8b51;
+}
+
+.content-area-padding-custom {
+    padding-top: 30px;
+}
+
+.duration-rating-custom {
+    top: 20px;
+}
+
+.whatsapp-icon {
+    bottom: 50px;
+}
+
+.footer-area-custom {
+    background-image: url(../images/counter-bg.png);
+}
+
+.product-application-wrapper {
+    padding: 15px;
+}
+
+.basic-information-custom {
+    border-bottom: 1px solid #dbdbdb;
+    padding: 15px 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media screen and (min-width:991px) {
+    .navigation .nav-toggle {
+        display: none;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .navigation .nav-toggle {
+        display: block;
+    }
+}
+.logo-img {
+    height: 100px;
+}
+
+.navigation .nav-menus-wrapper .nav-menu li a.active {
+    color: #6c3e95;
+}
+
+.navigation .nav-menus-wrapper .nav-menu li:hover>a {
+    color: #6c3e95;
+}
+
+.banner-content-custom {
+    padding-top: 40px;
+}
+
+.banner-content .title-custom span {
+    color: #6c3e95;
+}
+
+.footer-widget-wrapper .footer-social li a.facebook-logo:hover {
+    background-color: white;
+    color: #3b5998;
+}
+
+.footer-widget-wrapper .footer-social li a.linkdln-logo:hover {
+    background-color: white;
+    color: #0072b1;
+}
+
+.footer-widget-wrapper .footer-social li a.insta-logo:hover {
+    background-color: white;
+    color: #d62976;
+}
+
+.top-courses-area {
+    padding-top: 0px;
+}
+
+.header-area {
+    box-shadow: 0px 0px 8px #6c3e955e;
+}
+
+.about-content .about-title span {
+    color: #6c3e95;
+}
+
+.about-image {
+    height: auto;
+}
+
+.testimonials-area {
+    padding-top: 60px;
+}
+
+.event-tab-menu .nav li a.active {
+    background-color: #6c3e95;
+    border-color: #6c3e95;
+    border-radius: 10px;
+}
+
+.courses-menu .menu-items li.active, .courses-menu .menu-items li:hover {
+    background-color: #6c3e95;
+    color: #fff;
+    border-radius: 10px;
+    border-color: #6c3e95;
+}
+
+.single-testimonial-content {
+    border-top: 3px solid #6c3e95;
+}
+
+.single-testimonial-content .content-text i {
+    color: #6c3e95;
+}
+
+.single-contact-info {
+    align-items: flex-start;
+}
+
+.single-contact-info .info-content .title {
+    color: #6c3e95;
+}
+
+.single-contact-info .info-content p a:hover {
+    color: #6c3e95;
+}
+
+.contact-form {
+    padding-top: 60px;
+}
+
+.main-btn.main-btn-2 {
+    background-color: #6c3e95;
+}
+
+.main-btn:hover {
+    background-color: #6c3e95;
+    border-radius: 10px;
+}
+
+.single-event {
+    box-shadow: 0px 0px 8px lightgray;
+}
+
+.single-event:hover {
+    box-shadow: 5px 5px 8px #07294d;
+    border-radius:10px;
+}

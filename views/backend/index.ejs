@@ -1,0 +1,93 @@
+<%- layout('./layout/index') %>
+
+<%
+var silider_1 = MEDIA_URL + '/assets/images/slider-1.png';
+var silider_2 = MEDIA_URL + '/assets/images/slider-2.png';
+%>
+<section class="slider-area slider-active">
+    <div class="single-slider d-flex align-items-center bg_cover"
+         style="background-image: url(<%- silider_1%>);">
+        <div class="container">
+            <div class="slider-content">
+                <h2 class="title" data-animation="fadeInLeft" data-delay="0.2s">Tag Lines</h2>
+                <ul class="slider-btn">
+                    <li>
+                        <a data-animation="fadeInUp" data-delay="0.6s" class="main-btn main-btn-2" href="/products">
+                            View Product
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="single-slider d-flex align-items-center bg_cover"
+         style="background-image: url(<%- silider_2%>);">
+        <div class="container">
+            <div class="slider-content">
+                <h2 class="title" data-animation="fadeInLeft" data-delay="0.2s">Tag Lines</h2>
+                <ul class="slider-btn">
+                    <li>
+                        <a data-animation="fadeInUp" data-delay="0.6s" class="main-btn main-btn-2" href="/products">
+                            View Product
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="event-area event-area-custom">
+    <div class="container">
+        <div class="event-title-tab-menu">
+            <div class="event-title">
+                <div class="banner-content banner-content-custom align-items-center">
+                    <h2 class="title title-custom"><span>Our</span> Values</h2>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content event-tab-items wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.2s">
+            <div class="tab-pane fade show active" id="courses">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-event text-center mt-30" style="height: 370px;">
+
+                            <h4 class="event-title"><a href="#">Quality</a></h4>
+                            <p class="place">Maruti Color & Chemical, we prioritize unwavering quality standards.
+                                Our commitment to delivering premium-grade chemicals ensures reliability and
+                                satisfaction for our clients worldwide. With a stringent focus on quality control,
+                                we consistently provide chemicals that meet and exceed industry benchmarks.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-event text-center mt-30" style="height: 370px;">
+                            <h4 class="event-title"><a href="#">Innovation</a></h4>
+                            <p class="place">Our relentless pursuit of innovation fuels our commitment to shaping a
+                                dynamic chemical landscape. We drive transformative solutions, anticipating industry
+                                needs to redefine standards and unlock new possibilities. At the forefront of
+                                change, we challenge conventions, revolutionize processes, and forge the future of
+                                chemicals.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-event text-center mt-30" style="height: 370px;">
+
+                            <h4 class="event-title"><a href="#"> Sustainable</a></h4>
+                            <p class="place">We prioritize environmental responsibility and innovative practices,
+                                ensuring that our chemical solutions contribute to a greener future while meeting
+                                the evolving needs of industries worldwide.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="training">
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
