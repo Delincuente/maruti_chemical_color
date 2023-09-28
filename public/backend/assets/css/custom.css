@@ -189,3 +189,13 @@
     box-shadow: 5px 5px 8px #07294d;
     border-radius:10px;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
