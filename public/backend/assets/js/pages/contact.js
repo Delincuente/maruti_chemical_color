@@ -30,11 +30,13 @@ $(function () {
             error++;
             $(formMessages).addClass("alert-danger");
             $(formMessages).text('Email is required').show();
-        } else if (!phone) {
-            error++;
-            $(formMessages).addClass("alert-danger");
-            $(formMessages).text('Phone number is required').show();
-        } else if (!productName) {
+        } 
+        // else if (!phone) {
+        //     error++;
+        //     $(formMessages).addClass("alert-danger");
+        //     $(formMessages).text('Phone number is required').show();
+        // } 
+        else if (!productName) {
             error++;
             $(formMessages).addClass("alert-danger");
             $(formMessages).text('Product Name is required').show();
