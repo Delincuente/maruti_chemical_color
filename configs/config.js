@@ -5,7 +5,7 @@ module.exports = {
     APP_NAME: process.env.APP_NAME,
     ENV: process.env,
     BASE_URL: process.env.APP_URL,
-    SUPPORT_EMAIL: "support@support.com",
+    SUPPORT_EMAIL: "info@marutichemex.com",
     PRODUCT_LIST: productList,
     PRODUCT_DETAILS: productDetails,
     ADMIN_USERNAME: 'maruticolors89@gmail.com',
