@@ -8,7 +8,7 @@ module.exports = {
     SUPPORT_EMAIL: "support@support.com",
     PRODUCT_LIST: productList,
     PRODUCT_DETAILS: productDetails,
-    ADMIN_USERNAME: 'admin@admin.com',
+    ADMIN_USERNAME: 'maruticolors89@gmail.com',
     ADMIN_PASSWORD: '0e7517141fb53f21ee439b355b5a1d0a',
     ADMIN_ID: process.env.ADMIN_ID
 };
