@@ -35,6 +35,7 @@ app.use(async function (req, res, next) {
     res.locals.APP_NAME = CONFIGS.APP_NAME;
     res.locals.BASE_URL = appUrl;
     res.locals.MEDIA_URL = appUrl + '/backend';
+    res.locals.SUPPORT_EMAIL = CONFIGS.SUPPORT_EMAIL;
     next();
 });
 
