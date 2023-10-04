@@ -1,49 +1,50 @@
-{
-  "product_list": [
     {
       "id": "1",
       "type": "1",
-      "order": "1",
+      "order": "4",
       "name": "Aluminum Hydroxide",
       "profile": "aluminum_hydroxide.png",
       "cas": "21645-51-2"
-    },
     {
       "id": "2",
       "type": "1",
-      "order": "2",
+      "order": "5",
       "name": "Calcium Chloride",
       "profile": "calcium_chloride.png",
       "cas": "10043-52-4"
-    },
     {
       "id": "3",
       "type": "1",
-      "order": "3",
+      "order": "6",
       "name": "Ferric Chloride",
       "profile": "ferric_chloride.png",
       "cas": "7705-8-0"
-    },
     {
       "id": "4",
       "type": "1",
-      "order": "4",
+      "order": "7",
       "name": "Magnesium Chloride",
       "profile": "magnesium_chloride.png",
       "cas": "7791-18-6"
-    },
     {
       "id": "5",
       "type": "1",
-      "order": "5",
+      "order": "8",
       "name": "Sodium Sulphate",
       "profile": "sodium_sulphate.png",
       "cas": "7757-82-6"
     },
     {
+      "id": "6",
+      "type": "2",
+      "name": "PIGMENT BETA BLUE 15:3",
+      "profile": "beta_blue.png",
+      "cas": "147-14-8"
+    },
+    {
       "id": "11",
       "type": "1",
-      "order": "6",
+      "order": "3",
       "name": "CAUSTIC SODA FLAKES / PRILLS",
       "profile": "caustic_soda.png",
       "cas": "1310-73-2"
@@ -51,7 +52,7 @@
     {
       "id": "12",
       "type": "1",
-      "order": "7",
+      "order": "1",
       "name": "HYDROCHLORIC ACID",
       "profile": "hydrochloric_acid.png",
       "cas": "7647-01-0"
@@ -59,50 +60,10 @@
     {
       "id": "13",
       "type": "1",
-      "order": "8",
+      "order": "2",
       "name": "SULPHURIC ACID",
       "profile": "sulphuric_acid.png",
       "cas": "7664-93-9"
-    },
-    {
-      "id": "6",
-      "type": "2",
-      "order": "9",
-      "name": "ORANGE 13",
-      "profile": "orange_color.png",
-      "cas": "3520-72-7"
-    },
-    {
-      "id": "7",
-      "type": "2",
-      "order": "10",
-      "name": "YELLOW 12",
-      "profile": "yellow_color.png",
-      "cas": "6358-85-6 / 15541-56-7"
-    },
-    {
-      "id": "8",
-      "type": "2",
-      "order": "11",
-      "name": "GREEN 7",
-      "profile": "green_color.png",
-      "cas": "1328-53-6"
-    },
-    {
-      "id": "9",
-      "type": "2",
-      "order": "12",
-      "name": "ALPHA BLUE 15:0",
-      "profile": "blue_color.png",
-      "cas": "147-14-8"
-    },
-    {
-      "id": "10",
-      "type": "2",
-      "order": "13",
-      "name": "PIGMENT BETA BLUE 15:3",
-      "profile": "beta_blue.png",
-      "cas": "147-14-8"
     }
   ]
 }
