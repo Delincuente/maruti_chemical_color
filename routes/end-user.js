@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
 router.get('/products', (req, res) => {
     let data = {
         current_menu: 'products',
-        product_list: CONFIGS.PRODUCT_LIST
+        product_list: CONFIGS.PRODUCT_LIST.sort((a, b) => a.order - b.order)
     };
     res.render('backend/products/index', data);
 });
