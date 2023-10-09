@@ -30,6 +30,8 @@ router.get('/products/:id/product-details', (req, res) => {
             let additionalInformation = [];
             let filePath = '';
             let fileName = '';
+            let msdsFilePath = '';
+            let msdsFileName = '';
             let basicDataList = [];
             let productDetails = CONFIGS.PRODUCT_DETAILS.find(item => (item.product_id == productId));
             if (productDetails) {
@@ -49,9 +51,15 @@ router.get('/products/:id/product-details', (req, res) => {
                 if (productDetails.product_information && productDetails.product_information.length > 0) {
                     basicDataList = [...productDetails.product_information];
                 }
+                if (productDetails.msds_file) {
+                    msdsFileName = productDetails.msds_file;
+                    msdsFilePath = CONFIGS.BASE_URL + '/documents/MSDS_certificate/' + productDetails.msds_file;
+                }
             }
             productData['file_name'] = fileName;
             productData['file_path'] = filePath;
+            productData['msds_file_name'] = msdsFileName;
+            productData['msds_file_path'] = msdsFilePath;
             let data = {
                 current_menu: 'products',
                 product_data: productData,

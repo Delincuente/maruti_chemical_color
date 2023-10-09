@@ -54,8 +54,12 @@
                                     <a data-bs-toggle="tab" href="#reviews">Application</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<%-(product_data.file_path)%>" download="<%-(product_data.file_name)%>"><i
-                                            class="fa fa-download"></i></a>
+                                    <a data-bs-toggle="tab" href="#docs">
+                                        <i class="fa fa-file"></i>
+                                    </a>
+                                    <!--<a href="<%-(product_data.file_path)%>" download="<%-(product_data.file_name)%>">-->
+                                    <!--<i class="fa fa-download"></i>-->
+                                    <!--</a>-->
                                 </li>
                             </ul>
                             <div class="tab-content">
@@ -98,6 +102,44 @@
                                             <div style="padding-left: 25px"><b><%- (item)%></b></div>
                                         </div>
                                         <% })%>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="docs">
+                                    <div class="py-2">
+                                        <div class="container">
+                                            <div class="row no-gutters">
+                                                <div class="col-sm-6">
+                                                    <a href="<%-(product_data.file_path)%>" target="_blank">
+                                                        <div class="single-specialty mt-30">
+                                                            <div class="specialty-box">
+                                                                <div class="box-icon">
+                                                                    <img src="<%- MEDIA_URL %>/assets/images/icon/icon-2-1.webp"
+                                                                         width="70" height="70" alt="icon">
+                                                                </div>
+                                                                <div class="box-content">
+                                                                    <p>Product details</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <a href="<%-(product_data.msds_file_path)%>" target="_blank">
+                                                        <div class="single-specialty mt-30">
+                                                        <div class="specialty-box">
+                                                            <div class="box-icon">
+                                                                <img src="<%- MEDIA_URL %>/assets/images/icon/icon-2-5.webp"
+                                                                     width="70" height="70" alt="icon">
+                                                            </div>
+                                                            <div class="box-content">
+                                                                <p>MSDS certificate</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
