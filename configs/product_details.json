@@ -65,7 +65,8 @@
           "value": "28183000"
         }
       ],
-      "file": "aluminium_hydroxide.pdf"
+      "file": "aluminium_hydroxide.pdf",
+      "msds_file": "safety_al_hydroxide.pdf"
     },
     {
       "id": 2,
@@ -134,7 +135,8 @@
           "value": "28272000"
         }
       ],
-      "file": "calcium_chloride.pdf"
+      "file": "calcium_chloride.pdf",
+      "msds_file": "safety_calcium_chloride.pdf"
     },
     {
       "id": 3,
@@ -202,7 +204,8 @@
           "value": "38220090"
         }
       ],
-      "file": "ferric_chloride.pdf"
+      "file": "ferric_chloride.pdf",
+      "msds_file": "safety_ferric_chloride.pdf"
     },
     {
       "id": 4,
@@ -270,7 +273,8 @@
           "value": "28273100"
         }
       ],
-      "file": "magnesium_chloride.pdf"
+      "file": "magnesium_chloride.pdf",
+      "msds_file": "safety_mg_chloride.pdf"
     },
     {
       "id": 5,
@@ -336,7 +340,8 @@
           "value": "28331100"
         }
       ],
-      "file": "sodium_sulphate.pdf"
+      "file": "sodium_sulphate.pdf",
+      "msds_file": "safety_sodium_sulphate.pdf"
     },
     {
       "id": 6,
@@ -409,7 +414,8 @@
           "value": "1092 to 1127 Mg/mol"
         }
       ],
-      "file": "orange_13.pdf"
+      "file": "orange_13.pdf",
+      "msds_file": "safety_orange_13.pdf"
     },
     {
       "id": 7,
@@ -482,7 +488,8 @@
           "value": "629.49 Mg/mol"
         }
       ],
-      "file": "yellow_12.pdf"
+      "file": "yellow_12.pdf",
+      "msds_file": "safety_yellow_12.pdf"
     },
     {
       "id": 8,
@@ -552,7 +559,8 @@
           "value": "1092 to 1127 Mg/mol"
         }
       ],
-      "file": "green_7.pdf"
+      "file": "green_7.pdf",
+      "msds_file": "safety_green_7.pdf"
     },
     {
       "id": 9,
@@ -628,7 +636,8 @@
           "value": "575.5 mg/mol"
         }
       ],
-      "file": "alpha_blue.pdf"
+      "file": "alpha_blue.pdf",
+      "msds_file": "safety_alpha_blue.pdf"
     },
     {
       "id": 10,
@@ -700,7 +709,8 @@
           "value": ""
         }
       ],
-     "file": "beta_blue.pdf"
+      "file": "beta_blue.pdf",
+      "msds_file": "safety_beta_blue.pdf"
     },
     {
       "id": 11,
@@ -776,7 +786,8 @@
           "value": "28151110"
         }
       ],
-     "file": "castic_soda_flakes.pdf"
+      "file": "castic_soda_flakes.pdf",
+      "msds_file": "safety_caustic_soda.pdf"
     },
     {
       "id": 12,
@@ -851,7 +862,8 @@
           "value": "28061000"
         }
       ],
-     "file": "hydrochloric_acid.pdf"
+      "file": "hydrochloric_acid.pdf",
+      "msds_file": "safety_hcl.pdf"
     },
     {
       "id": 13,
@@ -924,7 +936,8 @@
           "value": "28070010"
         }
       ],
-     "file": "sulphuric_acid.pdf"
+      "file": "sulphuric_acid.pdf",
+      "msds_file": "safety_sulphuric_acid.pdf"
     }
   ]
 }
