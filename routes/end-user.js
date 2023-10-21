@@ -85,8 +85,14 @@ router.get('/about-us', (req, res) => {
 });
 
 router.get('/contact-us', (req, res) => {
+    let inputs = req.query;
+    let productName = '';
+    if (inputs.product) {
+        productName = CONFIGS.PRODUCT_LIST.find(item => (item.id == inputs.product))?.name;
+    }
     let data = {
         current_menu: 'contact-us',
+        product_name: productName
     };
     res.render('backend/contact_us/index', data);
 });
@@ -102,10 +108,12 @@ router.post('/contact-us', async (req, res) => {
     } else if (!inputs.email) {
         error++;
         message = 'Email is required';
-    } else if (!inputs.phone) {
-        error++;
-        message = 'Phone number is required';
-    } else if (!inputs.product_name) {
+    }
+    // else if (!inputs.phone) {
+    //     error++;
+    //     message = 'Phone number is required';
+    // }
+    else if (!inputs.product_name) {
         error++;
         message = 'Product Name is required';
     } else if (!inputs.inquiry_message) {
@@ -118,7 +126,7 @@ router.post('/contact-us', async (req, res) => {
             uuid: uuidv4(),
             company_name: inputs.company_name,
             email: inputs.email,
-            mobile: inputs.phone,
+            mobile: inputs.phone || '',
             product_name: inputs.product_name,
             inquiry_message: inputs.inquiry_message,
         };

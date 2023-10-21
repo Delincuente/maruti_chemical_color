@@ -69,17 +69,18 @@
     align-items: center;
 }
 
-@media screen and (min-width:991px) {
+@media screen and (min-width: 991px) {
     .navigation .nav-toggle {
         display: none;
     }
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width: 991px) {
     .navigation .nav-toggle {
         display: block;
     }
 }
+
 .logo-img {
     height: 100px;
 }
@@ -88,7 +89,7 @@
     color: #6c3e95;
 }
 
-.navigation .nav-menus-wrapper .nav-menu li:hover>a {
+.navigation .nav-menus-wrapper .nav-menu li:hover > a {
     color: #6c3e95;
 }
 
@@ -187,15 +188,41 @@
 
 .single-event:hover {
     box-shadow: 5px 5px 8px #07294d;
-    border-radius:10px;
+    border-radius: 10px;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+.inquiry-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6c3e95;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 5px;
+    cursor: pointer;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+}
+
+.inquiry-button svg path {
+    fill: #fff;
+}
+
+.inquiry-button:hover {
+    background-color: #fff;
+}
+
+.inquiry-button:hover svg path {
+    fill: #6c3e95;
 }

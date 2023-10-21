@@ -15,7 +15,7 @@ const inquirySchema = new Schema({
     },
     mobile: {
         type: Number,
-        required: true
+        required: false
     },
     email: {
         type: String,
