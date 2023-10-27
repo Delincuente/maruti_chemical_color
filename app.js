@@ -11,7 +11,7 @@ let adminRoutes = require('./routes/admin');
 let userRoutes = require('./routes/end-user');
 const CONFIGS = require('./configs/config');
 const connectDB = require('./configs/dbConnection');
-// const MailNotification = require('./helpers/EmailNotification');
+const MailNotification = require('./helpers/EmailNotification');
 connectDB();
 app.use(cors());
 
@@ -47,7 +47,7 @@ app.use(function logger(req, res, next) {
 
 app.use(userRoutes);
 app.use('/admin', adminRoutes);
-//MailNotification.testMail('test');
+MailNotification.testMail('test');
 
 let listen = app.listen(port, function () {
     listen.timeout = 120000;
