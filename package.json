@@ -19,6 +19,7 @@
     "mongoose": "^7.5.2",
     "nodemailer": "^6.9.7",
     "nodemailer-express-handlebars": "^6.1.0",
+    "express-handlebars": "^7.1.2",
     "uuid": "^9.0.1"
   }
 }
