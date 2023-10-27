@@ -4,22 +4,21 @@ const HBS = require('nodemailer-express-handlebars');
 const MailConfig = require('../configs/Mail');
 const CONFIGS = require('../configs/config');
 
-const mailProvider = MailConfig.provider;
-
 let mailTransPorter = {};
 mailTransPorter = {
-    // sendmail: true,
-    // newline: MailConfig.sendMailNewline,
-    // path: MailConfig.sendMailPath
-
-    host: MailConfig.hostName,
-    port: MailConfig.port, // Port number for your mail server (usually 587 for TLS, 465 for SSL, or 25 for non-encrypted)
-    secure: MailConfig.isSecure, // Set to true if you are using SSL
-    auth: {
-        user: MailConfig.username, // Your email address
-        pass: MailConfig.password // Your email password
+    host: MailConfig.provider,
+    secure: MailConfig.isSecure,
+    secureConnection: false, // TLS requires secureConnection to be false
+    tls: {
+        ciphers: 'SSLv3'
     },
-    timeout: 10000
+    requireTLS: true,
+    port: MailConfig.port,
+    debug: true,
+    auth: {
+        user: MailConfig.username,
+        pass: MailConfig.password
+    }
 };
 
 let transporter = nodeMailer.createTransport(mailTransPorter);
