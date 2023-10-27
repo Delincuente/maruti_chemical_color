@@ -3,6 +3,7 @@ const router = express.Router();
 const {v4: uuidv4} = require('uuid');
 const CONFIGS = require('../configs/config');
 const Inquiries = require('../models/inquiryModel');
+const MailNotification = require('../helpers/EmailNotification');
 
 router.get('/', (req, res) => {
     let data = {
@@ -138,6 +139,8 @@ router.post('/contact-us', async (req, res) => {
             .catch(error => {
                 console.log("ERROR : ", error);
             });
+
+        MailNotification.userInquiry(obj);
     }
     res.status(status).json({message: message});
 });

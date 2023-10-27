@@ -54,6 +54,26 @@ function sendMail(subject, template, mailContent) {
 }
 
 let mailCall = {
+    userInquiry: async (data) => {
+        try {
+            let mailContent = {
+                APP_NAME: CONFIGS.APP_NAME,
+                APP_URL: CONFIGS.BASE_URL,
+                SUPPORT_EMAIL: CONFIGS.SUPPORT_EMAIL,
+                data: data,
+            };
+
+            await sendMail(MailConfig.userInquiry, 'user_inquiry', mailContent)
+                .then(response => {
+                    console.log('inquiry mail success');
+                }).catch(err => {
+                    console.log('inquiry mail error : ', err);
+                });
+        } catch (e) {
+            console.log('inquiry mail : ', e);
+        }
+    },
+
     testMail: async (email) => {
         try {
             let mailContent = {
